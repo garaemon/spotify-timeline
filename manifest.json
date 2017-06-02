@@ -1,0 +1,7 @@
+{
+  "name": "spotify-timeline",
+  "short_name": "spotify-timeline",
+  "description": "Visualize spotify timeline",
+  "start_url": "/",
+  "display": "standalone"
+}

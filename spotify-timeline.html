@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="spotify-timeline">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `spotify-timeline`
+     * Visualize spotify log
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class SpotifyTimeline extends Polymer.Element {
+      static get is() { return 'spotify-timeline'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'spotify-timeline'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(SpotifyTimeline.is, SpotifyTimeline);
+  </script>
+</dom-module>

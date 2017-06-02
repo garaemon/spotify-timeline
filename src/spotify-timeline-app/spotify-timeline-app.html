@@ -1,0 +1,54 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../spotify-timeline-day-link/spotify-timeline-day-link.html">
+
+<dom-module id="spotify-timeline-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+    <spotify-timeline-day-link
+        year="2017"
+        month="6"
+        day="1">
+    </spotify-timeline-day-link>
+    <spotify-timeline-day-link
+        year="2017"
+        month="5"
+        day="31">
+    </spotify-timeline-day-link>
+    <spotify-timeline-day-link
+        year="2017"
+        month="5"
+        day="30">
+    </spotify-timeline-day-link>
+    <spotify-timeline-day-link
+        year="2017"
+        month="5"
+        day="29">
+    </spotify-timeline-day-link>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class SpotifyTimelineApp extends Polymer.Element {
+      static get is() { return 'spotify-timeline-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'spotify-timeline-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(SpotifyTimelineApp.is, SpotifyTimelineApp);
+  </script>
+</dom-module>
